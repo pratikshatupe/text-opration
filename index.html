@@ -73,7 +73,7 @@
      <button type="button" class="btn-action" onclick="handleUpperCase()"> upper case </button>
      <button type="button" class="btn-action" onclick="handleLowerCase()"> lower case </button>
 
-     <button type="button" class="btn-action" onclick="handlewordcount()"> word count</button>
+     <button type="button" class="btn-action" onclick="handleWordCount()"> word count</button>
 
      <button type="button" class="btn-action" onclick="handlecharactercount()">character count </button>
 
@@ -90,9 +90,9 @@
             outputElement.value=inputElement.value.toUpperCase();
 
         }
-        function handlewordcount(){
-     const totalwords=inputElement.value.split("").length;
-     outputElement.value= `word count:${totalwords}`;
+        function handleWordCount(){
+     const totalWords=inputElement.value.split(" ").length;
+     outputElement.value= `Word count:${totalWords}`;
         }
         function handlecharactercount(){
      outputElement.value= `character count: ${inputElement.value.length}`;
